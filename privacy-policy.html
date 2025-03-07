@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - WBA Steam</title>
+    <meta name="description" content="Pelajari kebijakan privasi WBA Steam mengenai penggunaan, penyimpanan, dan perlindungan data pengguna di situs wbasteam.web.id.">
+    <meta name="keywords" content="kebijakan privasi, WBA Steam, perlindungan data, wbasteam.web.id, cuci mobil, cuci motor">
+    <meta name="author" content="WBA Steam">
+    <meta property="og:title" content="Kebijakan Privasi - WBA Steam">
+    <meta property="og:description" content="Pelajari bagaimana WBA Steam melindungi informasi pribadi Anda saat menggunakan layanan kami.">
+    <meta property="og:url" content="https://wbasteam.web.id/privacy-policy">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://wbasteam.web.id/assets/images/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://wbasteam.web.id/images/wbalogo-white.png" type="image/x-icon">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://wbasteam.web.id/privacy-policy">
+    <script>
+        if (window.location.pathname.endsWith('.html')) {
+          window.location.href = window.location.pathname.replace('.html', '');
+        }
+    </script>
+
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'carwash-blue': '#1EAEDB',
+            'carwash-darkblue': '#0EA5E9',
+            'carwash-lightblue': '#D3E4FD',
+            'carwash-black': '#221F26',
+            'carwash-darkgray': '#555555',
+            'carwash-gray': '#F6F6F7',
+          },
+          backgroundImage: {
+            'hero-pattern': "url('./images/gallery/8.jpg')",
+          },
+        },
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-background">
+  <!-- Navbar -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out py-5 bg-transparent">
+    <div class="container-section py-0">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img src="./images/wbalogo.png" alt="WBA logo" class="h-12 w-12">
+          <span class="font-bold text-xl md:text-2xl text-carwash-black">
+            WBA Steam
+          </span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8">
+          <button onclick="scrollToSection('home')" class="text-carwash-darkgray hover:text-carwash-blue transition-colors relative group">
+            <span>Beranda</span>
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-carwash-blue transition-all duration-300 group-hover:w-full"></span>
+          </button>
+          <button onclick="scrollToSection('tentang')" class="text-carwash-darkgray hover:text-carwash-blue transition-colors relative group">
+            <span>Tentang</span>
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-carwash-blue transition-all duration-300 group-hover:w-full"></span>
+          </button>
+          <button onclick="scrollToSection('galeri')" class="text-carwash-darkgray hover:text-carwash-blue transition-colors relative group">
+            <span>Galeri</span>
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-carwash-blue transition-all duration-300 group-hover:w-full"></span>
+          </button>
+          <button onclick="scrollToSection('layanan')" class="text-carwash-darkgray hover:text-carwash-blue transition-colors relative group">
+            <span>Layanan & Harga</span>
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-carwash-blue transition-all duration-300 group-hover:w-full"></span>
+          </button>
+          <button onclick="scrollToSection('kontak')" class="text-carwash-darkgray hover:text-carwash-blue transition-colors relative group">
+            <span>Kontak</span>
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-carwash-blue transition-all duration-300 group-hover:w-full"></span>
+          </button>
+          <button 
+            onclick="scrollToSection('kontak')"
+            class="button-ripple bg-carwash-blue hover:bg-carwash-darkblue text-white px-5 py-2 rounded-full transition-colors duration-300 transform hover:scale-105 active:scale-100"
+          >
+            Booking Sekarang
+          </button>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden block p-2 focus:outline-none text-carwash-darkgray z-50"
+          aria-label="Toggle mobile menu"
+        >
+          <i data-lucide="menu" id="menu-icon" class="h-6 w-6 animate-fade-in"></i>
+          <i data-lucide="x" id="close-icon" class="h-6 w-6 hidden animate-fade-in"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 bg-white pt-24 pb-6 z-40 transform transition-transform duration-300 ease-in-out translate-x-full"
+    >
+      <nav class="flex flex-col items-center gap-6 px-6 bg-white h-svh">
+        <button
+          onclick="scrollToSection('home'); toggleMobileMenu()"
+          class="text-xl font-medium text-carwash-darkgray w-full py-3 border-b border-gray-100 animate-fade-up animate-delay-100"
+        >
+          <span>Beranda</span>
+        </button>
+        <button
+          onclick="scrollToSection('tentang'); toggleMobileMenu()"
+          class="text-xl font-medium text-carwash-darkgray w-full py-3 border-b border-gray-100 animate-fade-up animate-delay-200"
+        >
+          <span>Tentang</span>
+        </button>
+        <button
+          onclick="scrollToSection('galeri'); toggleMobileMenu()"
+          class="text-xl font-medium text-carwash-darkgray w-full py-3 border-b border-gray-100 animate-fade-up animate-delay-300"
+        >
+          <span>Galeri</span>
+        </button>
+        <button
+          onclick="scrollToSection('layanan'); toggleMobileMenu()"
+          class="text-xl font-medium text-carwash-darkgray w-full py-3 border-b border-gray-100 animate-fade-up animate-delay-400"
+        >
+          <span>Layanan & Harga</span>
+        </button>
+        <button
+          onclick="scrollToSection('kontak'); toggleMobileMenu()"
+          class="text-xl font-medium text-carwash-darkgray w-full py-3 border-b border-gray-100 animate-fade-up animate-delay-500"
+        >
+          <span>Kontak</span>
+        </button>
+        <button 
+          onclick="scrollToSection('kontak'); toggleMobileMenu()"
+          class="button-ripple bg-carwash-blue hover:bg-carwash-darkblue text-white w-full py-4 rounded-full mt-4 animate-fade-up animate-delay-600"
+        >
+          Booking Sekarang
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="pt-20">
+        <!-- artikel di bawah ini -->
+        <div class="container max-w-4xl mx-auto py-10 px-6">
+            <h1 class="text-3xl font-bold text-center text-carwash-blue mb-6">Kebijakan Privasi</h1>
+            
+            <section class="mb-6">
+                <h2 class="text-xl font-semibold text-gray-700">Pengenalan</h2>
+                <p class="mt-2">Selamat datang di <strong>WBA Steam</strong>. Kami menghargai privasi Anda dan berkomitmen untuk melindungi informasi pribadi yang Anda berikan saat mengakses situs kami (<a href="https://wbasteam.web.id" class="text-blue-500 underline">wbasteam.web.id</a>).</p>
+            </section>
+    
+            <section class="mb-6">
+                <h2 class="text-xl font-semibold text-gray-700">Informasi yang Kami Kumpulkan</h2>
+                <ul class="list-disc pl-5 mt-2">
+                    <li>Informasi yang Anda berikan secara langsung, seperti saat mengisi formulir kontak.</li>
+                    <li>Data teknis seperti alamat IP, jenis perangkat, dan data log.</li>
+                    <li>Cookie untuk meningkatkan pengalaman pengguna.</li>
+                </ul>
+            </section>
+    
+            <section class="mb-6">
+                <h2 class="text-xl font-semibold text-gray-700">Penggunaan Informasi</h2>
+                <ul class="list-disc pl-5 mt-2">
+                    <li>Mengoperasikan dan meningkatkan layanan kami.</li>
+                    <li>Menanggapi pertanyaan atau permintaan Anda.</li>
+                    <li>Menganalisis penggunaan situs untuk meningkatkan pengalaman pengguna.</li>
+                    <li>Mematuhi ketentuan hukum yang berlaku.</li>
+                </ul>
+            </section>
+    
+            <section class="mb-6">
+                <h2 class="text-xl font-semibold text-gray-700">Keamanan Data</h2>
+                <p class="mt-2">Kami mengambil langkah-langkah keamanan yang diperlukan untuk melindungi data pribadi Anda dari akses yang tidak sah.</p>
+            </section>
+    
+            <section class="mb-6">
+                <h2 class="text-xl font-semibold text-gray-700">Hak Pengguna</h2>
+                <ul class="list-disc pl-5 mt-2">
+                    <li>Meminta akses atau salinan data pribadi Anda.</li>
+                    <li>Mengajukan permohonan perubahan atau penghapusan data.</li>
+                    <li>Menolak pemrosesan tertentu sesuai dengan hukum yang berlaku.</li>
+                </ul>
+            </section>
+    
+            <section class="mb-6">
+                <h2 class="text-xl font-semibold text-gray-700">Perubahan Kebijakan</h2>
+                <p class="mt-2">Kami dapat memperbarui Kebijakan Privasi ini sewaktu-waktu. Perubahan akan diinformasikan melalui halaman ini.</p>
+            </section>
+    
+            <section class="mb-6">
+                <h2 class="text-xl font-semibold text-gray-700">Hubungi Kami</h2>
+                <p class="mt-2">Jika Anda memiliki pertanyaan terkait kebijakan ini, silakan hubungi kami melalui email di <a href="mailto:contact@wbasteam.web.id" class="text-blue-500 underline">contact@wbasteam.web.id</a>.</p>
+            </section>
+        </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-carwash-black text-white pt-16 pb-8">
+    <div class="container-section">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+        <div class="md:col-span-6 md:pr-4">
+          <div class="flex items-center gap-2 mb-6">
+            <img src="./images/wbalogo-white.png" alt="WBA logo" class="h-12 w-12">
+            <span class="font-bold text-xl md:text-2xl">WBA Steam</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            Tempat cuci motor dan mobil terbaik di Kota Serang! Menyediakan layanan cuci standar, detailing, hingga perlindungan ekstra dengan hasil maksimal.
+          </p>
+          <p class="text-gray-400 mb-6">
+            Nikmati kendaraan bersih, kinclong, dan terawat dengan harga transparan. Kunjungi kami sekarang!
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-carwash-blue transition-colors">
+              <i data-lucide="facebook" class="h-5 w-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-carwash-blue transition-colors">
+              <i data-lucide="instagram" class="h-5 w-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-carwash-blue transition-colors">
+              <i data-lucide="twitter" class="h-5 w-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-carwash-blue transition-colors">
+              <i data-lucide="youtube" class="h-5 w-5"></i>
+            </a>
+          </div>
+        </div>
+                
+        <div class="md:col-span-3">
+          <h4 class="font-semibold text-lg mb-6">Layanan</h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="#layanan" class="text-gray-400 hover:text-carwash-blue transition-colors">
+                Cuci Salju Premium
+              </a>
+            </li>
+            <li>
+              <a href="#layanan" class="text-gray-400 hover:text-carwash-blue transition-colors">
+                Interior Cleaning
+              </a>
+            </li>
+            <li>
+              <a href="#layanan" class="text-gray-400 hover:text-carwash-blue transition-colors">
+                Premium Detailing
+              </a>
+            </li>
+            <li>
+              <a href="#layanan" class="text-gray-400 hover:text-carwash-blue transition-colors">
+                Ceramic Coating
+              </a>
+            </li>
+            <li>
+              <a href="#layanan" class="text-gray-400 hover:text-carwash-blue transition-colors">
+                Full Detailing
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="md:col-span-3">
+          <h4 class="font-semibold text-lg mb-6">Jam Oprasional</h4>
+          <ul class="space-y-3">
+            <li class="flex justify-between">
+              <span class="text-gray-400">Senin - Jumat</span>
+              <span class="text-white">08:00 - 20:00</span>
+            </li>
+            <li class="flex justify-between">
+              <span class="text-gray-400">Sabtu</span>
+              <span class="text-white">08:30 - 20:00</span>
+            </li>
+            <li class="flex justify-between">
+              <span class="text-gray-400">Minggu</span>
+              <span class="text-white">08:10 - 20:00</span>
+            </li>
+          </ul>
+          <div class="mt-6 bg-carwash-blue/20 p-4 rounded-lg">
+            <p class="text-carwash-blue font-medium">Butuh bantuan?</p>
+            <a href="https://wa.me/6281315163232" class="text-white text-lg font-semibold hover:text-carwash-blue transition-colors">
+              (+62) 813-1516-3232
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">
+          © <span id="current-year"></span> WBA Steam. All rights reserved.
+        </p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="./privacy-policy.html" class="text-gray-400 hover:text-carwash-blue text-sm transition-colors">
+            Privacy Policy
+          </a>
+          <a href="./terms-of-service.html" class="text-gray-400 hover:text-carwash-blue text-sm transition-colors">
+            Terms of Service
+          </a>
+          <a href="./cookie-policy.html" class="text-gray-400 hover:text-carwash-blue text-sm transition-colors">
+            Cookie Policy
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script src="./assets/js/fungsional.js"></script>
+</body>
+</html>

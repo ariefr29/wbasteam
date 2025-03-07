@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+
+    <!-- Title -->
+    <title>Cuci Mobil & Motor Terbaik di Kota Serang - Kilap Maksimal!</title>
+    <meta name="description" content="Jasa cuci mobil & motor terbaik di Kota Serang! Layanan berkualitas, harga terjangkau, dan hasil maksimal. Hubungi kami sekarang!">
+    <meta name="keywords" content="cuci mobil Serang, cuci motor Serang, detailing mobil, salon mobil, cuci steam Serang">
+    <meta name="author" content="WBA Steam">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Cuci Mobil & Motor Terbaik di Kota Serang - Kilap Maksimal!">
+    <meta property="og:description" content="Jasa cuci mobil & motor terbaik di Kota Serang! Layanan berkualitas, harga terjangkau, dan hasil maksimal. Hubungi kami sekarang!">
+    <meta property="og:image" content="https://wbasteam.web.id/images/gallery/39.jpg">
+    <meta property="og:url" content="https://wbasteam.web.id">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cuci Mobil & Motor Terbaik di Kota Serang - Kilap Maksimal!">
+    <meta name="twitter:description" content="Jasa cuci mobil & motor terbaik di Kota Serang! Layanan berkualitas, harga terjangkau, dan hasil maksimal. Hubungi kami sekarang!">
+    <meta name="twitter:image" content="https://wbasteam.web.id/images/gallery/39.jpg">
+
+    <!-- Schema Markup (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "WBA Steam",
+        "image": "https://wbasteam.web.id/images/gallery/39.jpg",
+        "@id": "https://wbasteam.web.id",
+        "url": "https://wbasteam.web.id",
+        "telephone": "+62 812-3456-7890",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Samaun Bakri Kp. Domba No.29, Lopang, Kec. Serang, Kota Serang, Banten 42113",
+            "addressLocality": "Serang",
+            "addressRegion": "Banten",
+            "postalCode": "42113",
+            "addressCountry": "ID"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -6.120, 
+            "longitude": 106.150
+        },
+        "openingHours": "Mo-Su 08:00-20:00",
+        "priceRange": "$$"
+    }
+    </script>
+    <script>
+        if (window.location.pathname.endsWith('.html')) {
+          window.location.href = window.location.pathname.replace('index.html', '');
+        }
+    </script>      
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://wbasteam.web.id/images/wbalogo-white.png" type="image/x-icon">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://wbasteam.web.id">
+    
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'carwash-blue': '#1EAEDB',
+            'carwash-darkblue': '#0EA5E9',
+            'carwash-lightblue': '#D3E4FD',
+            'carwash-black': '#221F26',
+            'carwash-darkgray': '#555555',
+            'carwash-gray': '#F6F6F7',
+          },
+          backgroundImage: {
+            'hero-pattern': "url('./images/gallery/8.jpg')",
+          },
+        },
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-background">
+  <!-- Navbar -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out py-5 bg-transparent">
+    <div class="container-section py-0">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img src="./images/wbalogo.png" alt="WBA logo" class="h-12 w-12">
+          <span class="font-bold text-xl md:text-2xl text-carwash-black">
+            WBA Steam
+          </span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8">
+          <button onclick="scrollToSection('home')" class="text-carwash-darkgray hover:text-carwash-blue transition-colors relative group">
+            <span>Beranda</span>
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-carwash-blue transition-all duration-300 group-hover:w-full"></span>
+          </button>
+          <button onclick="scrollToSection('tentang')" class="text-carwash-darkgray hover:text-carwash-blue transition-colors relative group">
+            <span>Tentang</span>
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-carwash-blue transition-all duration-300 group-hover:w-full"></span>
+          </button>
+          <button onclick="scrollToSection('galeri')" class="text-carwash-darkgray hover:text-carwash-blue transition-colors relative group">
+            <span>Galeri</span>
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-carwash-blue transition-all duration-300 group-hover:w-full"></span>
+          </button>
+          <button onclick="scrollToSection('layanan')" class="text-carwash-darkgray hover:text-carwash-blue transition-colors relative group">
+            <span>Layanan & Harga</span>
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-carwash-blue transition-all duration-300 group-hover:w-full"></span>
+          </button>
+          <button onclick="scrollToSection('kontak')" class="text-carwash-darkgray hover:text-carwash-blue transition-colors relative group">
+            <span>Kontak</span>
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-carwash-blue transition-all duration-300 group-hover:w-full"></span>
+          </button>
+          <button 
+            onclick="scrollToSection('kontak')"
+            class="button-ripple bg-carwash-blue hover:bg-carwash-darkblue text-white px-5 py-2 rounded-full transition-colors duration-300 transform hover:scale-105 active:scale-100"
+          >
+            Booking Sekarang
+          </button>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden block p-2 focus:outline-none text-carwash-darkgray z-50"
+          aria-label="Toggle mobile menu"
+        >
+          <i data-lucide="menu" id="menu-icon" class="h-6 w-6 animate-fade-in"></i>
+          <i data-lucide="x" id="close-icon" class="h-6 w-6 hidden animate-fade-in"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 bg-white pt-24 pb-6 z-40 transform transition-transform duration-300 ease-in-out translate-x-full"
+    >
+      <nav class="flex flex-col items-center gap-6 px-6 bg-white h-svh">
+        <button
+          onclick="scrollToSection('home'); toggleMobileMenu()"
+          class="text-xl font-medium text-carwash-darkgray w-full py-3 border-b border-gray-100 animate-fade-up animate-delay-100"
+        >
+          <span>Beranda</span>
+        </button>
+        <button
+          onclick="scrollToSection('tentang'); toggleMobileMenu()"
+          class="text-xl font-medium text-carwash-darkgray w-full py-3 border-b border-gray-100 animate-fade-up animate-delay-200"
+        >
+          <span>Tentang</span>
+        </button>
+        <button
+          onclick="scrollToSection('galeri'); toggleMobileMenu()"
+          class="text-xl font-medium text-carwash-darkgray w-full py-3 border-b border-gray-100 animate-fade-up animate-delay-300"
+        >
+          <span>Galeri</span>
+        </button>
+        <button
+          onclick="scrollToSection('layanan'); toggleMobileMenu()"
+          class="text-xl font-medium text-carwash-darkgray w-full py-3 border-b border-gray-100 animate-fade-up animate-delay-400"
+        >
+          <span>Layanan & Harga</span>
+        </button>
+        <button
+          onclick="scrollToSection('kontak'); toggleMobileMenu()"
+          class="text-xl font-medium text-carwash-darkgray w-full py-3 border-b border-gray-100 animate-fade-up animate-delay-500"
+        >
+          <span>Kontak</span>
+        </button>
+        <button 
+          onclick="scrollToSection('kontak'); toggleMobileMenu()"
+          class="button-ripple bg-carwash-blue hover:bg-carwash-darkblue text-white w-full py-4 rounded-full mt-4 animate-fade-up animate-delay-600"
+        >
+          Booking Sekarang
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section 
+      id="home" 
+      class="relative min-h-screen bg-hero-pattern bg-cover bg-center flex items-center justify-center text-white overflow-hidden"
+    >
+      <div class="absolute inset-0 bg-gradient-to-b from-carwash-black/40 to-carwash-black/60"></div>
+      
+      <div class="container-section relative z-10 text-center">
+        <span class="inline-block bg-carwash-blue/90 text-white px-4 py-1 rounded-full text-sm md:text-base mb-6 animate-fade-down">
+          Bersih Maksimal, Kendaraan Kinclong Seperti Baru!
+        </span>
+        
+        <h1 class="animate-fade-up mb-6 max-w-4xl mx-auto">
+          Steam Cuci Salju di Kota Serang 
+          <span class="text-carwash-blue block mt-2">Cuci Motor & Mobil Terbaik</span>
+        </h1>
+        
+        <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto mb-10 animate-fade-up animate-delay-200">
+            Kami memberikan kualitas yang luar biasa dan perhatian terhadap detail, memastikan kendaraan Anda menerima perawatan premium yang layak.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up animate-delay-300">
+          <button onclick="scrollToSection('kontak')" class="button-ripple bg-carwash-blue hover:bg-carwash-darkblue text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-100 shadow-lg hover:shadow-xl">
+            Booking Sekarang
+          </button>
+          
+          <button class="button-ripple bg-white/10 backdrop-blur-sm hover:bg-white/20 border border-white/20 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-100">
+            Lihat Layanan
+          </button>
+        </div>
+      </div>
+      
+      <div class="absolute bottom-10 z-40 transform -translate-x-1/2 animate-bounce">
+        <button 
+          onclick="scrollToSection('tentang')"
+          class="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-colors border border-white/20"
+          aria-label="Scroll to next section"
+        >
+          <i data-lucide="chevron-down" class="text-white h-5 w-5"></i>
+        </button>
+      </div>
+      
+      <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-carwash-black/90 to-transparent"></div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section 
+      id="tentang"
+      class="bg-carwash-gray py-20 md:py-32 relative overflow-hidden scroll-reveal-section"
+    >
+      <!-- Decorative elements -->
+      <div class="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent"></div>
+      <div class="absolute -top-16 -right-16 w-64 h-64 rounded-full bg-carwash-blue/5"></div>
+      <div class="absolute top-1/4 -left-20 w-40 h-40 rounded-full bg-carwash-blue/5"></div>
+      
+      <div class="container-section">
+        <div class="scroll-reveal-section">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="inline-block bg-carwash-lightblue text-carwash-blue px-4 py-1 rounded-full text-sm font-medium mb-4">
+              Tentang WBA Steam
+            </span>
+            <h2 class="section-heading mb-6">Bersih Maksimal, Kendaraan Kinclong Seperti Baru</h2>
+            <p class="text-carwash-darkgray text-lg">
+                Kami di WBA Steam menghadirkan layanan cuci salju premium untuk motor dan mobil dengan teknologi busa salju terbaik di Kota Serang. Kami memastikan kendaraan Anda tidak hanya bersih luar dalam, tetapi juga terlindungi dari kotoran, debu, dan kerak membandel.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 scroll-reveal-section">
+          <!-- Feature Card 1 -->
+          <div class="glass-card p-6 md:p-8 flex flex-col items-center text-center animate-fade-up animate-delay-100">
+            <div class="w-14 h-14 rounded-full bg-carwash-lightblue flex items-center justify-center mb-4">
+              <i data-lucide="shield-check" class="h-7 w-7 text-carwash-blue"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Kualitas Terjamin</h3>
+            <p class="text-carwash-darkgray">Kami menjamin semua layanan kami dengan memperhatikan setiap detail untuk hasil akhir yang sempurna.</p>
+          </div>
+          
+          <!-- Feature Card 2 -->
+          <div class="glass-card p-6 md:p-8 flex flex-col items-center text-center animate-fade-up animate-delay-200">
+            <div class="w-14 h-14 rounded-full bg-carwash-lightblue flex items-center justify-center mb-4">
+              <i data-lucide="clock" class="h-7 w-7 text-carwash-blue"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Pelayanan Cepat & Nyaman</h3>
+            <p class="text-carwash-darkgray">Proses cuci efisien tanpa mengorbankan kualitas, menghargai waktu Anda.</p>
+          </div>
+          
+          <!-- Feature Card 3 -->
+          <div class="glass-card p-6 md:p-8 flex flex-col items-center text-center animate-fade-up animate-delay-300">
+            <div class="w-14 h-14 rounded-full bg-carwash-lightblue flex items-center justify-center mb-4">
+              <i data-lucide="thumbs-up" class="h-7 w-7 text-carwash-blue"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Pengerjaan Profesional</h3>
+            <p class="text-carwash-darkgray">Tim ahli kami berpengalaman dan memastikan setiap detail kendaraan bersih sempurna.</p>
+          </div>
+          
+          <!-- Feature Card 4 -->
+          <div class="glass-card p-6 md:p-8 flex flex-col items-center text-center animate-fade-up animate-delay-400">
+            <div class="w-14 h-14 rounded-full bg-carwash-lightblue flex items-center justify-center mb-4">
+              <i data-lucide="droplets" class="h-7 w-7 text-carwash-blue"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Busa Salju Premium </h3>
+            <p class="text-carwash-darkgray">Membersihkan lebih dalam, melindungi cat kendaraan, dan membuatnya lebih berkilau.</p>
+          </div>
+        </div>
+        
+        <div class="mt-20 md:mt-32 grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 items-center scroll-reveal-section">
+          <div>
+            <img 
+              src="./images/gallery/39.jpg" 
+              alt="Car washing service" 
+              class="rounded-2xl shadow-lg w-full h-auto object-cover transform md:scale-110"
+            />
+          </div>
+          
+          <div>
+            <span class="inline-block bg-carwash-lightblue text-carwash-blue px-4 py-1 rounded-full text-sm font-medium mb-4">
+                Perjalanan Kami
+            </span>
+            <h3 class="text-2xl md:text-3xl font-semibold mb-6">
+                Perjalanan Kami dalam Merawat Kendaraan Anda
+            </h3>
+            <p class="text-carwash-darkgray mb-6">
+                Berawal dari passion dalam merawat kendaraan, WBA Steam hadir untuk memberikan layanan cuci salju premium yang lebih dari sekadar membersihkan. Dengan teknologi busa salju, produk berkualitas, dan tenaga profesional, kami memastikan kendaraan Anda selalu bersih, berkilau, dan terlindungi.
+            </p>
+            <p class="text-carwash-darkgray mb-8">
+                Kami percaya bahwa kebersihan kendaraan mencerminkan pemiliknya. Karena itu, kami berkomitmen menghadirkan layanan terbaik dengan hasil maksimal dan pengalaman pelanggan yang nyaman.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="py-20 md:py-32 relative overflow-hidden scroll-reveal-section">
+      <div class="absolute -top-40 -right-40 w-80 h-80 rounded-full bg-carwash-blue/5"></div>
+      <div class="absolute bottom-20 -left-20 w-60 h-60 rounded-full bg-carwash-blue/5"></div>
+      
+      <div class="container-section">
+        <div class="text-center max-w-3xl mx-auto mb-16 scroll-reveal-section">
+          <span class="inline-block bg-carwash-lightblue text-carwash-blue px-4 py-1 rounded-full text-sm font-medium mb-4">
+            Galeri Kegiatan
+          </span>
+          <h2 class="section-heading mb-6">Hasil Kerja Kami</h2>
+          <p class="text-carwash-darkgray text-lg">
+            Lihat bagaimana kami merawat setiap kendaraan dengan detail. Dari pencucian menyeluruh hingga perawatan premium, inilah dedikasi kami dalam setiap proses.
+          </p>
+        </div>
+        
+        <div id="gallery" class="gallery grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 scroll-reveal-section"></div>
+        
+        <div class="mt-20 text-center scroll-reveal-section">
+          <a href="./gallery.html" class="button-ripple bg-carwash-blue hover:bg-carwash-darkblue text-white px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-100">
+            Lihat Lebih Banyak
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan & Harga Section -->
+    <section id="layanan" class="py-20 md:py-32 bg-carwash-gray relative overflow-hidden scroll-reveal-section">
+      <div class="absolute -top-40 -left-40 w-80 h-80 rounded-full bg-carwash-blue/5"></div>
+      <div class="absolute bottom-20 -right-20 w-60 h-60 rounded-full bg-carwash-blue/5"></div>
+      
+      <div class="container-section">
+        <div class="text-center max-w-3xl mx-auto mb-16 scroll-reveal-section">
+          <span class="inline-block bg-carwash-lightblue text-carwash-blue px-4 py-1 rounded-full text-sm font-medium mb-4">
+            Layanan & Harga
+          </span>
+          <h2 class="section-heading mb-6">Harga Transparan Untuk Semua Layanan</h2>
+          <p class="text-carwash-darkgray text-lg">
+            Harga kami bervariasi berdasarkan ukuran kendaraan dan persyaratan khusus. Pilih jenis kendaraan Anda di bawah ini untuk melihat harga terperinci.
+          </p>
+        </div>
+        
+        <div class="scroll-reveal-section">
+            <!-- Car Layanan & Harga -->
+            <div id="car-price-list" class="vehicle-price-list mb-12"></div>
+            
+            <!-- Motorcycle Layanan & Harga -->
+            <div id="motorcycle-price-list" class="vehicle-price-list"></div>
+        </div>        
+      </div>
+      
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-20 md:py-32 relative overflow-hidden scroll-reveal-section">
+      <div class="absolute -top-40 -left-40 w-80 h-80 rounded-full bg-carwash-blue/5"></div>
+      <div class="absolute bottom-20 -right-20 w-60 h-60 rounded-full bg-carwash-blue/5"></div>
+      
+      <div class="container-section">
+        <div class="text-center max-w-3xl mx-auto mb-16 scroll-reveal-section">
+          <span class="inline-block bg-carwash-lightblue text-carwash-blue px-4 py-1 rounded-full text-sm font-medium mb-4">
+            Kontak Kami
+          </span>
+          <h2 class="section-heading mb-6">Layanan Cuci Motor & Mobil Terbaik di Kota Serang</h2>
+          <p class="text-carwash-darkgray text-lg">
+            Butuh kendaraan bersih dan kinclong? Kami siap melayani! Hubungi kami sekarang untuk informasi layanan, harga, atau reservasi. Kepuasan Anda, prioritas kami!
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 scroll-reveal-section">
+          <div>
+            <div class="glass-card p-6 md:p-8 mb-8">
+                <h3 class="text-xl font-semibold mb-6">Informasi Kontak</h3>
+                
+                <div class="space-y-6">
+                  <div class="flex items-start">
+                    <div class="w-10 h-10 rounded-full bg-carwash-lightblue flex items-center justify-center mr-4 flex-shrink-0">
+                      <i data-lucide="map-pin" class="h-5 w-5 text-carwash-blue"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-medium mb-1">Alamat</h4>
+                      <p class="text-carwash-darkgray">Jl. Samaun Bakri Kp. Domba No.29, Lopang, Kec. Serang, Kota Serang, Banten 42113, Indonesia</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start">
+                    <div class="w-10 h-10 rounded-full bg-carwash-lightblue flex items-center justify-center mr-4 flex-shrink-0">
+                      <i data-lucide="phone" class="h-5 w-5 text-carwash-blue"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-medium mb-1">Nomor Kontak</h4>
+                      <p class="text-carwash-darkgray">
+                        <a href="https://wa.me/6281315163232" class="hover:text-carwash-blue transition-colors">(+62) 813-1516-3232</a>
+                      </p>
+                    </div>
+                  </div>
+                                    
+                  <div class="flex items-start">
+                    <div class="w-10 h-10 rounded-full bg-carwash-lightblue flex items-center justify-center mr-4 flex-shrink-0">
+                      <i data-lucide="clock" class="h-5 w-5 text-carwash-blue"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-medium mb-1">Jam Oprasional</h4>
+                      <p class="text-carwash-darkgray">Senin - Jumat: 08:00 - 20:00</p>
+                      <p class="text-carwash-darkgray">Sabtu: 08:30 - 20:00</p>
+                      <p class="text-carwash-darkgray">Minggu: 08:10 - 20:00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+          </div>
+          
+          <div>            
+            <div class="glass-card p-6 md:p-8">
+              <h3 class="text-xl font-semibold mb-6">Temukan Kami di Google Maps</h3>
+              <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden">
+                <!-- Replace with your actual Google Maps embed code -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d787.185930545663!2d106.1596162660192!3d-6.108009149214556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e41f5ff57847b2d%3A0xc6485bdc4bbd5a62!2sWBA%20STEAM%20(Cuci%20Motor%20dan%20Mobil)!5e0!3m2!1sen!2sus!4v1741246345087!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-carwash-black text-white pt-16 pb-8">
+    <div class="container-section">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+        <div class="md:col-span-6 md:pr-4">
+          <div class="flex items-center gap-2 mb-6">
+            <img src="./images/wbalogo-white.png" alt="WBA logo" class="h-12 w-12">
+            <span class="font-bold text-xl md:text-2xl">WBA Steam</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            Tempat cuci motor dan mobil terbaik di Kota Serang! Menyediakan layanan cuci standar, detailing, hingga perlindungan ekstra dengan hasil maksimal.
+          </p>
+          <p class="text-gray-400 mb-6">
+            Nikmati kendaraan bersih, kinclong, dan terawat dengan harga transparan. Kunjungi kami sekarang!
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-carwash-blue transition-colors">
+              <i data-lucide="facebook" class="h-5 w-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-carwash-blue transition-colors">
+              <i data-lucide="instagram" class="h-5 w-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-carwash-blue transition-colors">
+              <i data-lucide="twitter" class="h-5 w-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-carwash-blue transition-colors">
+              <i data-lucide="youtube" class="h-5 w-5"></i>
+            </a>
+          </div>
+        </div>
+                
+        <div class="md:col-span-3">
+          <h4 class="font-semibold text-lg mb-6">Layanan</h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="#layanan" class="text-gray-400 hover:text-carwash-blue transition-colors">
+                Cuci Salju Premium
+              </a>
+            </li>
+            <li>
+              <a href="#layanan" class="text-gray-400 hover:text-carwash-blue transition-colors">
+                Interior Cleaning
+              </a>
+            </li>
+            <li>
+              <a href="#layanan" class="text-gray-400 hover:text-carwash-blue transition-colors">
+                Premium Detailing
+              </a>
+            </li>
+            <li>
+              <a href="#layanan" class="text-gray-400 hover:text-carwash-blue transition-colors">
+                Ceramic Coating
+              </a>
+            </li>
+            <li>
+              <a href="#layanan" class="text-gray-400 hover:text-carwash-blue transition-colors">
+                Full Detailing
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="md:col-span-3">
+          <h4 class="font-semibold text-lg mb-6">Jam Oprasional</h4>
+          <ul class="space-y-3">
+            <li class="flex justify-between">
+              <span class="text-gray-400">Senin - Jumat</span>
+              <span class="text-white">08:00 - 20:00</span>
+            </li>
+            <li class="flex justify-between">
+              <span class="text-gray-400">Sabtu</span>
+              <span class="text-white">08:30 - 20:00</span>
+            </li>
+            <li class="flex justify-between">
+              <span class="text-gray-400">Minggu</span>
+              <span class="text-white">08:10 - 20:00</span>
+            </li>
+          </ul>
+          <div class="mt-6 bg-carwash-blue/20 p-4 rounded-lg">
+            <p class="text-carwash-blue font-medium">Butuh bantuan?</p>
+            <a href="https://wa.me/6281315163232" class="text-white text-lg font-semibold hover:text-carwash-blue transition-colors">
+              (+62) 813-1516-3232
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">
+          © <span id="current-year"></span> WBA Steam. All rights reserved.
+        </p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="./privacy-policy.html" class="text-gray-400 hover:text-carwash-blue text-sm transition-colors">
+            Privacy Policy
+          </a>
+          <a href="./terms-of-service.html" class="text-gray-400 hover:text-carwash-blue text-sm transition-colors">
+            Terms of Service
+          </a>
+          <a href="./cookie-policy.html" class="text-gray-400 hover:text-carwash-blue text-sm transition-colors">
+            Cookie Policy
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  
+    <!-- Lightbox -->
+    <div id="lightbox" onclick="closeLightbox()" class="z-50">
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+    </div>
+    <script src="./assets/js/gallery.js"></script>
+    <script src="./assets/js/fungsional.js"></script>
+    <script src="./assets/js/hargaLayanan.js"></script>
+</body>
+</html>
